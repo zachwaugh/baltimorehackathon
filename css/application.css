@@ -1,0 +1,63 @@
+/*-----------------------------------------------------------------------------------
+  Global Reset v0.3 (based on http://meyerweb.com/eric/tools/css/reset/ - v1.0 | 20080212)
+-----------------------------------------------------------------------------------*/
+	 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+	 body { line-height: 1; }
+	 ol, ul { list-style: none; }
+	 :focus { outline: 0; }
+	 table { border-collapse: collapse; border-spacing: 0; }
+	 /* HTML5 */
+	 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+
+/*---------------------------
+  Elements
+---------------------------*/
+	body { background: #CCBA96 url(../images/background.png); color: #000; font-family: Georgia, 'Times New Roman', serif; font-size: 11px; }
+	h1, h2, h3, h4, h5, h6 { font-weight: normal; letter-spacing: 0.02em; }
+	h1 { font-size: 48px; margin-bottom: 10px; text-align: center; text-transform: uppercase; }
+	h1 small { font-size: 24px; text-transform: none; }
+	h1 span { font-size: 58px; }
+	h2 { font-size: 32px; margin-bottom: 15px; }
+	a { color: #000; }
+	a:hover { color: #666; }
+	p { font-size: 18px; line-height: 1.4; margin-bottom: 20px; }
+	section { border-top: 5px solid rgba(106, 92, 66, 0.15); margin-bottom: 50px; padding-top: 25px; }
+	
+	ul { margin-left: 15px; }
+	ul li { list-style: square; }
+	li { font-size: 14px; margin-bottom: 5px; }
+	
+	header { margin-top: 20px; }
+	
+	footer { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 200px; margin-top: 100px; text-align: center; }
+	footer p { font-size: 14px; padding-top: 10px; }
+	
+	
+/*------------------------------------------- 
+  Global
+-------------------------------------------*/
+	.left { float: left; }
+	.block_left { float: left; margin: 0 10px 10px 0; }
+	.right { float: right; }
+	.block_right { float: right; margin: 0 0 10px 10px; }
+	.center { text-align: center; }
+	.clear { clear: both; }
+	
+	.column { float: left; padding: 0 0 0 10px; width: 290px; }
+	.column p { padding-right: 20px; }
+	
+	#container { overflow: hidden; position: relative; }
+	#wrapper { margin: 0 auto; max-width: 900px; min-width: 320px; position: relative;  }
+	
+	#feature { height: 375px; margin: 40px 0 50px 40px; }
+	#feature li { display: block; float: left; height: 375px; list-style: none; margin-right: 10px; position: relative; }
+	#feature li.build { width: 175px; }
+	#feature li.meet_people { width: 360px; }
+	#feature li.have_fun { margin-right: 0; width: 280px; }
+	#feature h2 { bottom: 0; font-size: 64px; left: 0; position: absolute; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
+	
+	#diver { left: 50px; position: absolute; top: -300px; z-index: 0; }
+	
+	#octopus { background: url(../images/octopus.png); bottom: -75px; cursor: pointer; height: 359px; position: absolute; right: -100px; width: 406px; }
+	
