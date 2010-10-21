@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+		<meta charset="utf-8" />
 		<title>The First Baltimore Hackathon</title>
    	<link rel="stylesheet" href="css/application.css" media="all" />
 		<script type="text/javascript" src="http://use.typekit.com/ibt2sup.js"></script>
@@ -62,7 +63,7 @@
 					<div class="column">
 						<h2>Rules</h2>
 						<p>
-							The rules will evolve via this Google Doc over the next month or so.  We encourage you to add to that doc and ask questions via the doc.  The rules will be considered final when opening ceremonies begin.
+							The rules will evolve via <a href="https://docs.google.com/document/edit?id=14qGF8eeb5CNRpqEqdP_WWlhjNjxpRB-y1rTamnKYWhE&amp;hl=en">this Google Doc</a> over the next month or so.  We encourage you to add to that doc and ask questions via the doc.  The rules will be considered final when opening ceremonies begin.
 						</p>
 					</div>
 
@@ -71,7 +72,7 @@
 						<p>
 							Judges will be recognizing the best projects in these categories:
 						</p>
-						<ul>
+						<ul class="list">
 							<li>Best Software Prototype - Individual</li>
 							<li>Best Software Prototype - Group</li>
 							<li>Best Hardware Prototype - Individual</li>
@@ -85,44 +86,100 @@
 						<p>
 							You can register for the event on its <a href="http://bhat1.eventbrite.com">EventBrite page</a>
 						</p>
+						
+						<a href="http://bhat1.eventbrite.com" class="button">Sign Up</a>
 					</div>
 
 					<br class="clear" />
 				</section>
 
-				<section>
-					<h2>Participants</h2>
-
-					<h2>Judges</h2>
-				</section>
-
-				<section>
-					<h2>Our Sponsors</h2>
-					<a href="http://www.mp3car.com" class="block_left"><img src="images/mp3car.png" alt="" /></a>
-				<a href="http://www.smartlogicsolutions.com"><img src="images/smartlogicsolutions.png" class="block_left" alt="" /></a>
-					<a href="http://www.macmedics.com"><img src="images/macmedics.png" class="block_left" alt="" /></a>
+				<!-- <section>
+					<div class="column double">
+						<h2>Participants</h2>
+					</div>
 					
+					<div class="column">
+						<h2>Judges</h2>
+						<ul class="judges">
+							<li>
+								<img src="images/photo.jpg" alt="" />
+								<a href="#">Judge Name</a>
+							</li>
+						</ul>
+						<p>
+							<em>Judges will be announced soon.</em>
+						</p>
+					</div>
+				
 					<br class="clear" />
+				</section> -->
+
+				<section>
+					<div class="column full">
+						<h2>Our Sponsors</h2>
+						<a href="http://www.mp3car.com" class="block_left"><img src="images/mp3car.png" alt="" /></a>
+						<a href="http://www.smartlogicsolutions.com"><img src="images/smartlogicsolutions.png" class="block_left" alt="" /></a>
+						<a href="http://www.macmedics.com"><img src="images/macmedics.png" class="block_left" alt="" /></a>
+						<a href="http://www.winterscoffee.com"><img src="images/winterscoffee.jpg" class="block_left" alt="" /></a>
+						<br class="clear" />
+					</div>
 				</section>
 				
-				
 				<section>
-					<h2>On Twitter</h2>
-					<p>
+					<div class="column">
+						<h2><a href="http://twitter.com/bmorehackathon" class="twitter">On Twitter</a></h2>
+						<div id="twitter">
+							<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+							<script>
+							new TWTR.Widget({
+							  version: 2,
+							  type: 'profile',
+							  rpp: 1,
+							  interval: 6000,
+							  width: 290,
+							  height: 'auto',
+							  theme: {
+							    shell: {
+							      background: 'transparent',
+							      color: '#000000'
+							    },
+							    tweets: {
+							      background: 'transparent',
+							      color: '#000000',
+							      links: '#000000'
+							    }
+							  },
+							  features: {
+							    scrollbar: false,
+							    loop: false,
+							    live: true,
+							    hashtags: true,
+							    timestamp: true,
+							    avatars: false,
+							    behavior: 'all'
+							  }
+							}).render().setUser('bmorehackathon').start();
+							</script>
+						</div>
 						
-					</p>
+					</div>
+					<br class="clear" />
 				</section>
 				
 	    </div><!-- #wrapper -->
 
 			<footer>
-				<p>Questions? Contact mike [at] subelsky.com. Interested in sponsoring? Contact matthew.forr [at] gmail.com</p>
+				<p>
+					Questions? Contact mike [at] subelsky.com. Interested in sponsoring? Contact matthew.forr [at] gmail.com<br />
+					<small>Designed &amp; Developed by <a href="http://zachwaugh.com">Zach Waugh</a></small>
+				</p>
 			</footer>
 			
 			<div id="octopus"></div>
 		</div><!-- #container -->
  
-    <script src="js/jquery-1.4.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
     <script src="js/application.js"></script>
   </body>
 </html>
