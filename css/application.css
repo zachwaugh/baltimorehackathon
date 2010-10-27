@@ -82,9 +82,10 @@
 	#twitter .twtr-tweet-wrap { padding: 0; }
 	#twitter .twtr-timeline { height: auto; }
 	
-	#attendees li { display: inline; font-size: 18px; height: 48px; line-height: 48px; margin: 0 10px 10px 0; }
-	
-	
+	#attendees li { display: block; float: left; font-size: 14px; height: 24px; line-height: 24px; margin: 0 10px 10px 0;  }
+	#attendees li a { background-color: #BCAB88; background-color: rgba(106, 92, 66, 0.15); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: block; float: left; padding: 0 5px; text-decoration: none; }
+	#attendees li a:hover { background-color: #AF9F7D; background-color: rgba(106, 92, 66, 0.25); color: #000; }
+		
 /*-------------------------------------------
   iPhone
 -------------------------------------------*/
