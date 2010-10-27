@@ -82,6 +82,8 @@
 	#twitter .twtr-tweet-wrap { padding: 0; }
 	#twitter .twtr-timeline { height: auto; }
 	
+	#attendees li { display: inline; font-size: 18px; height: 48px; line-height: 48px; margin: 0 10px 10px 0; }
+	
 	
 /*-------------------------------------------
   iPhone

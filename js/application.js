@@ -20,3 +20,9 @@ function attack(event)
 		});
 	}});
 }
+
+
+$('#attendees').eventbrite_attendees({
+  app_key: 'MWUwZjRlZjk4MDk3',
+  event_id: '943934333'
+});
