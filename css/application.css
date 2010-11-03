@@ -44,6 +44,7 @@
 	.column.double { width: 580px; }
 	.column.full { float: none; width: 890px; }
 	.column p { padding-right: 20px; }
+	.column p.second { margin-top: 20px; }
 	
 	.button { background: url(../images/button.png); color: #fff; display: inline-block; font-family: "goudy-bookletter-1911-1","goudy-bookletter-1911-2","Georgia","Times New Roman",serif; font-size: 24px; height: 54px; line-height: 46px; text-align: center; text-decoration: none; text-shadow: 1px 1px 0 #000; width: 276px; }
 	.button:hover { color: #e7e7e7; }
