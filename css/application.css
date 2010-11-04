@@ -70,6 +70,7 @@
 	.judges li { display: block; font-size: 18px; height: 48px; line-height: 48px; margin-bottom: 10px; }
 	.judges li img { margin-right: 5px; vertical-align: middle; }
 	
+	.sponsors .lead-sponsor { text-align: center; }
 	.sponsors .sponsor { display: block; float: left; margin: 0 25px 25px 0; }
 	
 	.twitter { background: url(../images/twitter.png) no-repeat left center; display: block; padding-left: 40px; text-decoration: none; }
