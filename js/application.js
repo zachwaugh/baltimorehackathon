@@ -22,7 +22,12 @@ function attack(event)
 }
 
 
-$('#attendees').eventbrite_attendees({
+// $('#second-hackathon').eventbrite_attendees({
+//   app_key: 'MWUwZjRlZjk4MDk3',
+//   event_id: '943934333'
+// });
+
+$('#first-hackathon').eventbrite_attendees({
   app_key: 'MWUwZjRlZjk4MDk3',
   event_id: '943934333'
 });
