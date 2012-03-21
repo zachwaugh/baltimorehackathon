@@ -81,12 +81,14 @@
 	#twitter .twtr-widget a { text-decoration: underline !important; }
 	#twitter .twtr-widget p { line-height: 1.4 !important; }
 	#twitter .twtr-hd, #twitter .twtr-ft { display: none; }
-	#twitter .twtr-tweet-wrap { padding: 0; }
+	#twitter .twtr-tweet-wrap { padding: 10px; }
 	#twitter .twtr-timeline { height: auto; }
+	#twitter .twtr-tweet { width: 280px; float: left; border: none !important; }
 	
 	#attendees li { display: block; float: left; font-size: 14px; height: 24px; line-height: 24px; margin: 0 10px 10px 0;  }
 	#attendees li a { background-color: #BCAB88; background-color: rgba(106, 92, 66, 0.15); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: block; float: left; padding: 0 5px; text-decoration: none; }
 	#attendees li a:hover { background-color: #AF9F7D; background-color: rgba(106, 92, 66, 0.25); color: #000; }
+	#ribbon { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 40px; text-align: center; font-size: 18px; line-height: 40px; }
 		
 /*-------------------------------------------
   iPhone
