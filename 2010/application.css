@@ -52,12 +52,12 @@
 	#container { overflow: hidden; position: relative; }
 	#wrapper { margin: 0 auto; position: relative; width: 900px; }
 	
-	#feature { height: 220px; margin: 5px 0 50px 10px; }
-	#feature li { display: block; float: left; list-style: none; margin-right: 10px; position: relative; }
+	#feature { height: 375px; margin: 40px 0 50px 40px; }
+	#feature li { display: block; float: left; height: 375px; list-style: none; margin-right: 10px; position: relative; }
 	#feature li.build { width: 175px; }
 	#feature li.meet_people { width: 360px; }
 	#feature li.have_fun { margin-right: 0; width: 280px; }
-	#feature h2 { bottom: 0; font-size: 44px; left: 0; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
+	#feature h2 { bottom: 0; font-size: 58px; left: 0; position: absolute; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
 	.wf-active #feature h2 { font-size: 64px; }
 	
 	#diver { left: 50px; position: absolute; top: -300px; z-index: 0; }
