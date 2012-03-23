@@ -16,7 +16,7 @@ $(function()
 function create_floater(file, klass, x, y, delta)
 {
   var ratio = Math.random();
-  var spd = Math.ceil(ratio*3);
+  var spd = Math.ceil(ratio*delta);
   var image = $('<img/>', {
     src: 'images/' + file,
     style: 'width: ' + Math.floor(ratio*100) + '%;'
