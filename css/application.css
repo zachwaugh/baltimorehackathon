@@ -26,7 +26,8 @@
 	
 	header { margin-top: 20px; }
 	
-	footer { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 200px; margin-top: 150px; text-align: center; }
+	/*footer { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 200px; margin-top: 150px; text-align: center; }*/
+	footer { background: rgba(103, 91, 68, 0.150) repeat-x; height: 200px; margin-top: 150px; text-align: center; }
 	footer p { font-size: 13px; padding-top: 30px; }
 	footer p small { font-size: 11px; }
 	
@@ -64,6 +65,15 @@
 	
 	#octopus { background: url(../images/octopus.png); bottom: -75px; cursor: pointer; height: 359px; position: absolute; right: -100px; width: 406px; }
 	
+  .loop {
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+  }
+
 	ul.list { margin-left: 15px; }
 	ul.list li { font-size: 14px; list-style: disc; margin-bottom: 5px; }
 	
@@ -88,7 +98,7 @@
 	.attendees li { display: block; float: left; font-size: 14px; height: 24px; line-height: 24px; margin: 0 10px 10px 0;  }
 	.attendees li a { background-color: #BCAB88; background-color: rgba(106, 92, 66, 0.15); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: block; float: left; padding: 0 5px; text-decoration: none; }
 	.attendees li a:hover { background-color: #AF9F7D; background-color: rgba(106, 92, 66, 0.25); color: #000; }
-	#ribbon { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 40px; text-align: center; font-size: 18px; line-height: 40px; }
+	#ribbon { height: 40px; text-align: center; color: #9b8c6f; font-size: 18px; line-height: 40px; }
 		
 /*-------------------------------------------
   iPhone
