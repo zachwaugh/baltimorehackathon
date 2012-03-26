@@ -17,16 +17,19 @@ function create_floater(file, klass, x, y, delta)
 {
   var ratio = Math.random();
   var spd = Math.ceil(ratio*delta);
+  var amp = 5 * Math.random() + .1;
+  var shift = 2 * Math.PI * Math.random();
+
   var image = $('<img/>', {
     src: 'images/' + file,
     style: 'width: ' + Math.floor(ratio*100) + '%;'
   }).appendTo($('<div/>', {
     'class': klass,
-    style: 'position: absolute; z-index: 100; left: ' + x + 'px; top: ' + y + 'px; width: 60px; height: 60px;'
+    style: 'position: absolute; z-index: 100; opacity: ' + ratio + '; left: ' + x + 'px; top: ' + y + 'px; width: 60px; height: 60px;'
   }).appendTo('#container'));
 
   var elem = image.parent();
-  var t = setInterval(function(){move_right(elem, spd)}, refresh);
+  var t = setInterval(function(){move_right(elem, spd); bob(elem, y, .1, amp, shift)}, refresh);
   elem.attr('spd', spd);
   elem.attr('int', t);
   return elem;
@@ -39,7 +42,7 @@ function clouds()
   var y = iHeight - Math.floor(Math.random()*height);
   var x = Math.floor(Math.random()*iWidth);
 
-  create_floater(cloud_files[idx], 'cloud', x, y, 3);
+  create_floater(cloud_files[idx], 'cloud', x, y, 1);
 }
 
 function dirigibles()
@@ -49,7 +52,7 @@ function dirigibles()
   var y = iHeight - Math.floor(Math.random()*height);
   var x = Math.floor(Math.random()*iWidth);
 
-  var dirig = create_floater(files[idx], 'dirig', x, y, 5);
+  var dirig = create_floater(files[idx], 'dirig', x, y, 2);
   var image = dirig.find('img').first();
 
   dirig.css('width', image.clientWidth);
@@ -78,6 +81,11 @@ function move_right(elem, spd)
     elem.css('left', elem.position().left + spd + 'px');
   else
     elem.css('left', '-100px');
+}
+
+function bob(elem, y, feq, amp, shift)
+{
+    elem.css('top', y + amp * Math.sin(feq * elem.position().left + shift) + 'px');
 }
 
 // $('#second-hackathon').eventbrite_attendees({
