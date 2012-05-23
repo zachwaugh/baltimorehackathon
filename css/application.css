@@ -82,7 +82,8 @@
 
   .sponsors .lead-sponsor { padding-top: 50px; text-align: center; }
   .sponsors .sponsor { display: block; float: left; margin: 0 25px 25px 0; padding-top: 30px; padding-left: 30px }
-  #smartlogic { margin-left: 100px; padding-top: 0px; }
+  #smartlogic { margin-left: 100px; padding-top: 0; }
+  #cfabrigade { margin-left: 0; padding-top: 0; }
   .twitter { background: url(../images/twitter.png) no-repeat left center; display: block; padding-left: 40px; text-decoration: none; }
 
   /* Override twitter widget styles */
