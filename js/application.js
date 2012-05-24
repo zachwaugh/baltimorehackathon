@@ -116,6 +116,6 @@ function bob(floater)
 }
 
 $('#second-hackathon').eventbrite_attendees({
-  app_key: 'MWUwZjRlZjk4MDk3',
+  app_key: 'BFVR3ADZQZVNSY7GT7',
   event_id: '3531576039'
 });
