@@ -11,7 +11,7 @@ function animate() {
 
 $(function()
 {
-  iHeight = $(document).height() + 50;
+  iHeight = $(document).height() + 150;
   iWidth = window.innerWidth;
   for(var i=50; i > 0; i--)
     clouds();
