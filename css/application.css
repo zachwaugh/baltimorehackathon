@@ -31,7 +31,7 @@
   footer p { font-size: 13px; padding-top: 30px; }
   footer p small { font-size: 11px; }
 
-/*------------------------------------------- 
+/*-------------------------------------------
   Global
 -------------------------------------------*/
   .left { float: left; }
@@ -100,6 +100,73 @@
   .attendees li a { background-color: #BCAB88; background-color: rgba(106, 92, 66, 0.15); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: block; float: left; padding: 0 5px; text-decoration: none; }
   .attendees li a:hover { background-color: #AF9F7D; background-color: rgba(106, 92, 66, 0.25); color: #000; }
   #ribbon { height: 40px; text-align: center; color: #9b8c6f; font-size: 18px; line-height: 40px; }
+
+
+
+/* Twitter bootstrap button */
+  .btn {
+    display: inline-block;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(0.25, #ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
+    background-image: -moz-linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
+    background-image: -ms-linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
+    background-image: -o-linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
+    background-image: linear-gradient(#ffffff, #ffffff 0.25, #e6e6e6);
+    padding: 4px 14px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    color: #333;
+    font-size: 13px;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    border-bottom-color: #bbb;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background-position: 0 -15px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .btn {
+    -webkit-transition: 0.1s linear all;
+    -moz-transition: 0.1s linear all;
+    transition: 0.1s linear all;
+  }
+
+  .btn.large {
+    font-size: 20px;
+    line-height: 32px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+
+  /* http://charliepark.org/bootstrap_buttons/ */
+  .btn-signup {
+    background-color: hsl(35, 51%, 31%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc873d", endColorstr="#775526");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#bc873d), to(#775526));
+    background-image: -moz-linear-gradient(top, #bc873d, #775526);
+    background-image: -ms-linear-gradient(top, #bc873d, #775526);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bc873d), color-stop(100%, #775526));
+    background-image: -webkit-linear-gradient(top, #bc873d, #775526);
+    background-image: -o-linear-gradient(top, #bc873d, #775526);
+    background-image: linear-gradient(#bc873d, #775526);
+    border-color: #775526 #775526 hsl(35, 51%, 26.5%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+    -webkit-font-smoothing: antialiased;
+  }
 
 /*-------------------------------------------
   iPhone
