@@ -86,7 +86,7 @@
   div#other-sponsors { width: 100%; text-align: center; padding-bottom: 15px; }
   #smartlogic { margin-left: 100px; padding-top: 0; }
   #cfabrigade { margin-left: 0; padding-top: 0; }
-  .twitter { background: url(../images/twitter.png) no-repeat left center; display: block; padding-left: 40px; text-decoration: none; }
+  .twitter { background: url(../images/twitter.png) no-repeat left center; display: block; padding: 5px 40px; text-decoration: none; }
 
   /* Override twitter widget styles */
   #twitter .twtr-widget { font-family: Georgia, 'Times New Roman', serif !important; }
