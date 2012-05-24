@@ -181,36 +181,37 @@
             <h2><a href="http://twitter.com/bmorehackathon" class="twitter">On Twitter</a></h2>
 
             <div id="twitter">
-              <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+              <!--<script src="http://widgets.twimg.com/j/2/widget.js"></script>-->
+              <script src="js/widget.js"></script>
               <script>
-              new TWTR.Widget({
-                version: 2,
-                type: 'profile',
-                rpp: 3,
-                interval: 6000,
-                width: 'auto',
-                height: 'auto',
-                theme: {
-                  shell: {
-                    background: 'transparent',
-                    color: '#000000'
-                  },
-                  tweets: {
-                    background: 'transparent',
-                    color: '#000000',
-                    links: '#000000'
-                  }
-                },
-                features: {
-                  scrollbar: false,
-                  loop: false,
-                  live: true,
-                  hashtags: true,
-                  timestamp: true,
-                  avatars: false,
-                  behavior: 'all'
-                }
-              }).render().setUser('bmorehackathon').start();
+                  new TWTR.Widget({
+                    version: 2,
+                    type: 'profile',
+                    rpp: 3,
+                    interval: 6000,
+                    width: 'auto',
+                    height: '200px',
+                    theme: {
+                      shell: {
+                        background: 'transparent',
+                        color: '#000000'
+                      },
+                      tweets: {
+                        background: 'transparent',
+                        color: '#000000',
+                        links: '#000000'
+                      }
+                    },
+                    features: {
+                      scrollbar: false,
+                      loop: false,
+                      live: true,
+                      hashtags: true,
+                      timestamp: true,
+                      avatars: false,
+                      behavior: 'all'
+                    }
+                  }).render().setUser('bmorehackathon').start();
               </script>
             </div>
 

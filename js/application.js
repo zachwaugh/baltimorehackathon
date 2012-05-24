@@ -11,7 +11,12 @@ function animate() {
 
 $(function()
 {
-  iHeight = $.getDocHeight();
+  $('#second-hackathon').eventbrite_attendees({
+    app_key: 'BFVR3ADZQZVNSY7GT7',
+    event_id: '3531576039'
+  });
+
+  iHeight = $.getDocHeight() + 200;
   iWidth = window.innerWidth;
   for(var i=50; i > 0; i--)
     clouds();
@@ -121,8 +126,3 @@ $.getDocHeight = function(){
                   Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
                   Math.max(D.body.clientHeight, D.documentElement.clientHeight));
 };
-
-$('#second-hackathon').eventbrite_attendees({
-  app_key: 'BFVR3ADZQZVNSY7GT7',
-  event_id: '3531576039'
-});
