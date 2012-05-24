@@ -1,37 +1,53 @@
-var refresh = 50;
+var rate = 50;
 var wWidth, wHeight;
 var cloud_files = [ 'cloud1.png', 'cloud2.png', 'cloud3.png', 'cloud4.png'];
 var files = ['dirigible.png', 'airship-boat.png'];
+var floaters = {}, floatCount = 0;
+
+function animate() {
+  var values = _.values(floaters);
+  setInterval(function() { _.each(values, updateFloater) }, rate);
+}
 
 $(function()
 {
-  iHeight = $(document).height() + 150;
+  iHeight = $(document).height() + 50;
   iWidth = window.innerWidth;
   for(var i=50; i > 0; i--)
     clouds();
   for(var i=5; i > 0; i--)
     dirigibles();
+  animate();
 });
 
 function create_floater(file, klass, x, y, delta)
 {
   var ratio = Math.random();
-  var spd = Math.ceil(ratio*delta);
+  var spd = Math.ceil(ratio * delta);
   var amp = 5 * Math.random() + .1;
   var shift = 2 * Math.PI * Math.random();
 
   var image = $('<img/>', {
     src: 'images/' + file,
-    style: 'width: ' + Math.floor(ratio*100) + '%;'
+    style: 'width: ' + Math.floor(ratio * 100) + '%;'
   }).appendTo($('<div/>', {
     'class': klass,
     style: 'position: absolute; z-index: 100; opacity: ' + ratio + '; left: ' + x + 'px; top: ' + y + 'px; width: 60px; height: 60px;'
   }).appendTo('#container'));
 
-  var elem = image.parent();
-  var t = setInterval(function(){move_right(elem, spd); bob(elem, y, .1, amp, shift)}, refresh);
-  elem.attr('spd', spd);
-  elem.attr('int', t);
+  var elem = image.parent(),
+      elem_id = 'floater-' + floatCount++;
+  elem.attr('id', elem_id);
+  floaters[elem_id] = {
+    element: elem,
+    speed: spd,
+    amplitude: amp,
+    shift: shift,
+    animate: true,
+    x: x,
+    y: y
+  };
+
   return elem;
 }
 
@@ -58,42 +74,48 @@ function dirigibles()
   dirig.css('width', image.clientWidth);
   dirig.css('height', image.clientHeight);
   dirig.click(function() {
-    var d = Number($(this).attr('spd'));
-    var i = $(this).attr('int');
-    clearInterval(i);
-    loop($(this), d);
+    var floater = floaters[$(this).attr('id')];
+    floater.animate = false;
+    loop(floater);
   });
 }
 
-function loop(elem, spd)
+function loop(floater)
 {
-  elem.addClass('loop');
+  floater.element.addClass('loop');
   setTimeout(function() {
-    elem.removeClass('loop');
-    var i = setInterval(function(){move_right(elem, Number(spd))}, refresh);
-    elem.attr('int', i);
+    floater.element.removeClass('loop');
+    floater.animate = true;
   }, 1000);
 }
 
-function move_right(elem, spd)
-{
-  if( elem.position().left < window.innerWidth + 250)
-    elem.css('left', elem.position().left + spd + 'px');
-  else
-    elem.css('left', '-100px');
+function updateFloater(floater) {
+  if (floater.animate) {
+    move_right(floater);
+    bob(floater);
+  }
 }
 
-function bob(elem, y, feq, amp, shift)
+// reset after passing right boundary
+function move_right(floater)
 {
-    elem.css('top', y + amp * Math.sin(feq * elem.position().left + shift) + 'px');
+  if(floater.x < window.innerWidth + 75) {
+    floater.x += floater.speed;
+  } else {
+    floater.x = -75;
+  }
+  floater.element.css('left', floater.x + 'px');
 }
 
-// $('#second-hackathon').eventbrite_attendees({
-//   app_key: 'MWUwZjRlZjk4MDk3',
-//   event_id: '943934333'
-// });
+function bob(floater)
+{
+  var feq = 0.1;
+  floater.element.css('top', floater.y +
+                             floater.amplitude * Math.sin(feq * floater.x + floater.shift) +
+                             'px');
+}
 
-$('#first-hackathon').eventbrite_attendees({
-  app_key: 'MWUwZjRlZjk4MDk3',
-  event_id: '943934333'
+$('#second-hackathon').eventbrite_attendees({
+  app_key: 'BFVR3ADZQZVNSY7GT7',
+  event_id: '3531576039'
 });
