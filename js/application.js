@@ -5,13 +5,13 @@ var files = ['dirigible.png', 'airship-boat.png'];
 var floaters = {}, floatCount = 0;
 
 function animate() {
-  var values = _.values(floaters),
+  var values = _.values(floaters);
   setInterval(function() { _.each(values, updateFloater) }, rate);
 }
 
 $(function()
 {
-  iHeight = $(document).height();
+  iHeight = $(document).height() + 50;
   iWidth = window.innerWidth;
   for(var i=50; i > 0; i--)
     clouds();
@@ -111,7 +111,7 @@ function bob(floater)
 {
   var feq = 0.1;
   floater.element.css('top', floater.y +
-                             floater.amp * Math.sin(feq * floater.x + floater.shift) +
+                             floater.amplitude * Math.sin(feq * floater.x + floater.shift) +
                              'px');
 }
 

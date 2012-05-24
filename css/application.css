@@ -18,7 +18,7 @@
   h1 { font-size: 48px; margin-bottom: 10px; position: relative; text-align: center; text-transform: uppercase; z-index: 2; }
   h1 small { font-size: 24px; text-transform: none; }
   h1 span { font-size: 58px;  }
-  h2 { font-size: 32px; margin-bottom: 15px; }
+  h2 { font-size: 30px; margin-bottom: 15px; }
   a { color: #000; }
   a:hover { color: #333; }
   p { font-size: 18px; line-height: 1.4; margin-bottom: 20px; }
@@ -28,7 +28,7 @@
 
   /*footer { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 200px; margin-top: 150px; text-align: center; }*/
   footer { background: rgba(103, 91, 68, 0.150) repeat-x; height: 200px; margin-top: 150px; text-align: center; }
-  footer p { font-size: 13px; padding-top: 30px; }
+  footer p { font-size: 13px; padding-top: 15px; }
   footer p small { font-size: 11px; }
 
 /*-------------------------------------------
@@ -81,7 +81,9 @@
   .judges li img { margin-right: 5px; vertical-align: middle; }
 
   .sponsors .lead-sponsor { padding-top: 50px; text-align: center; }
-  .sponsors .sponsor { display: block; float: left; margin: 0 25px 25px 0; padding-top: 30px; padding-left: 30px }
+  .sponsors .sponsor { margin: 0 25px 25px 0; padding-top: 30px; padding-left: 30px }
+  .sponsors .sponsor img { max-width: 300px; max-height: 60px; }
+  div#other-sponsors { width: 100%; text-align: center; padding-bottom: 15px; }
   #smartlogic { margin-left: 100px; padding-top: 0; }
   #cfabrigade { margin-left: 0; padding-top: 0; }
   .twitter { background: url(../images/twitter.png) no-repeat left center; display: block; padding-left: 40px; text-decoration: none; }
@@ -167,6 +169,8 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
     -webkit-font-smoothing: antialiased;
   }
+
+div#how-do-i-participate p#sign-up-button { text-align: center; }
 
 /*-------------------------------------------
   iPhone
