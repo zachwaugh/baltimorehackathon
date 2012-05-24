@@ -11,7 +11,7 @@ function animate() {
 
 $(function()
 {
-  iHeight = $(document).height() + 150;
+  iHeight = $.getDocHeight();
   iWidth = window.innerWidth;
   for(var i=50; i > 0; i--)
     clouds();
@@ -114,6 +114,13 @@ function bob(floater)
                              floater.amplitude * Math.sin(feq * floater.x + floater.shift) +
                              'px');
 }
+
+$.getDocHeight = function(){
+  var D = document;
+  return Math.max(Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+                  Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+                  Math.max(D.body.clientHeight, D.documentElement.clientHeight));
+};
 
 $('#second-hackathon').eventbrite_attendees({
   app_key: 'BFVR3ADZQZVNSY7GT7',
