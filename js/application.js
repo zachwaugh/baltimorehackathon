@@ -6,7 +6,7 @@ var floaters = {}, floatCount = 0;
 
 function animate() {
   var values = _.values(floaters),
-  setInterval(function () { _.each(values, updateFloater) }, rate);
+  setInterval(function() { _.each(values, updateFloater) }, rate);
 }
 
 $(function()
@@ -115,12 +115,7 @@ function bob(floater)
                              'px');
 }
 
-// $('#second-hackathon').eventbrite_attendees({
-//   app_key: 'MWUwZjRlZjk4MDk3',
-//   event_id: '943934333'
-// });
-
-$('#first-hackathon').eventbrite_attendees({
+$('#second-hackathon').eventbrite_attendees({
   app_key: 'MWUwZjRlZjk4MDk3',
-  event_id: '943934333'
+  event_id: '3531576039'
 });
