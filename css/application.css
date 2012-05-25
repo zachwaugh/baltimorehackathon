@@ -25,6 +25,7 @@
   section { border-top: 5px solid rgba(106, 92, 66, 0.15); margin-bottom: 35px; padding: 25px 0 0 0; }
 
   header { margin-top: 20px; }
+  header a { text-decoration: none; }
 
   /*footer { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 200px; margin-top: 150px; text-align: center; }*/
   footer { background: rgba(103, 91, 68, 0.150) repeat-x; height: 200px; margin-top: 150px; text-align: center; }
