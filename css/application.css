@@ -81,6 +81,9 @@
   .judges li { display: block; font-size: 18px; height: 48px; line-height: 48px; margin-bottom: 10px; }
   .judges li img { margin-right: 5px; vertical-align: middle; }
 
+  .jobreq h3 { font-size: 24px; margin-bottom: 10px; }
+  .jobreq p { font-size: 14px; margin-top: 2px; }
+
   .sponsors .lead-sponsor { padding-top: 50px; text-align: center; }
   .sponsors .sponsor { display: block; float: left; margin: 0 25px 25px 0; padding-top: 30px; padding-left: 30px }
   #smartlogic { margin-left: 100px; padding-top: 0; }
