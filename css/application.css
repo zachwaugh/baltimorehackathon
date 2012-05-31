@@ -87,12 +87,9 @@
   .jobreq p { font-size: 14px; margin-top: 2px; }
 
   .sponsors .lead-sponsor { padding-top: 50px; text-align: center; }
-  .sponsors .sponsor { margin: 0 25px 25px 0; padding-top: 30px; padding-left: 30px }
-  .sponsors .sponsor img { max-width: 300px; max-height: 60px; padding: 3px; }
-  div#other-sponsors { width: 100%; text-align: center; padding-bottom: 15px; }
-  #smartlogic { margin-left: 0px; padding-top: 0; }
-  #cfabrigade { margin-left: 0; padding-top: 0; }
-  #thunderboltlabs { margin-left: 0; padding-top: 0;}
+  .sponsors .sponsor { padding-left: 30px }
+  .sponsors .sponsor img { max-width: 300px; max-height: 60px; padding: 5px 3px 3px 3px; }
+  div#other-sponsors { width: 100%; text-align: center; padding: 15px 0; }
   .twitter { background: url(../images/twitter.png) no-repeat left center; display: block; padding: 5px 40px; text-decoration: none; }
 
   /* Override twitter widget styles */
