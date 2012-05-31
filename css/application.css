@@ -26,6 +26,7 @@
   section { border-top: 5px solid rgba(106, 92, 66, 0.15); margin-bottom: 35px; padding: 25px 0 0 0; }
 
   header { margin-top: 20px; }
+  header a { text-decoration: none; }
 
   /*footer { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 200px; margin-top: 150px; text-align: center; }*/
   footer { background: rgba(103, 91, 68, 0.150) repeat-x; height: 200px; margin-top: 150px; text-align: center; }
@@ -81,6 +82,9 @@
 
   .judges li { display: block; font-size: 18px; height: 48px; line-height: 48px; margin-bottom: 10px; }
   .judges li img { margin-right: 5px; vertical-align: middle; }
+
+  .jobreq h3 { font-size: 24px; margin-bottom: 10px; }
+  .jobreq p { font-size: 14px; margin-top: 2px; }
 
   .sponsors .lead-sponsor { padding-top: 50px; text-align: center; }
   .sponsors .sponsor { margin: 0 25px 25px 0; padding-top: 30px; padding-left: 30px }
