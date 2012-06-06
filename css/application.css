@@ -83,6 +83,7 @@
   .judges li { display: block; font-size: 18px; height: 48px; line-height: 48px; margin-bottom: 10px; }
   .judges li img { margin-right: 5px; vertical-align: middle; }
 
+  .profile { width: 425px; margin: 0 auto; }
   .profile p{ font-size: 16px; }
   .profile img { float: left; padding-right: 5px; }
 
