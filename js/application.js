@@ -19,7 +19,7 @@ $(function() {
 //Create floating stuff after everything on page is loaded
 //so that the height of `document` is finalized
 $(window).load(function() {
-  iHeight = $.getDocHeight() + 200;
+  iHeight = $.getDocHeight();
   iWidth = window.innerWidth;
   for(var i=50; i > 0; i--)
     clouds();
