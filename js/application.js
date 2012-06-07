@@ -9,13 +9,16 @@ function animate() {
   setInterval(function() { _.each(values, updateFloater) }, rate);
 }
 
-$(function()
-{
+$(function() {
   $('#second-hackathon').eventbrite_attendees({
     app_key: 'BFVR3ADZQZVNSY7GT7',
     event_id: '3531576039'
   });
+});
 
+//Create floating stuff after everything on page is loaded
+//so that the height of `document` is finalized
+$(window).load(function() {
   iHeight = $.getDocHeight() + 200;
   iWidth = window.innerWidth;
   for(var i=50; i > 0; i--)
