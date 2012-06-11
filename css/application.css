@@ -90,6 +90,8 @@
   .jobreq h3 { font-size: 24px; margin-bottom: 10px; }
   .jobreq p { font-size: 14px; margin-top: 2px; }
 
+  .winner { margin-top: 10px; border-style: solid; border-color: #000; border-width: 1px;}
+
   .sponsors .lead-sponsor { padding-top: 50px; text-align: center; }
   .sponsors .sponsor { padding-left: 30px }
   .sponsors .sponsor img { max-width: 300px; max-height: 60px; padding: 5px 3px 3px 3px; }
